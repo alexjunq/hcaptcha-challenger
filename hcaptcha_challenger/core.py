@@ -24,6 +24,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from undetected_chromedriver import Chrome
+from selenium.webdriver import ActionChains
 
 from ._solutions import resnet, yolo
 from .exceptions import LabelNotFoundException, ChallengePassed, ChallengeLangException
@@ -147,7 +148,22 @@ class HolyChallenger:
             "canine": "dog",
             "horse": "horse",
             "giraffe": "giraffe",
+            "Please click on all images containing an animal": "dog",
+            "Please click each image containing a plant": "plant"
         },
+        "pt": {
+            "animal": "dog",
+            "planeta": "sports ball",
+            "um animal": "dog", # force yolo
+            "um planeta": "sports ball", # force yolo
+            "algo que você pode comer": "cake", # force yolo
+            "Por favor, clique em todas as imagens que contenham um animal": "dog", # force yolo
+            "uma planta": "potted plant", # force yolo
+            "Por favor, clique em todas as imagens que contêm uma fruta": "fruit",
+            "fruta": "apple",
+            "flor": "sunflower"
+
+        }
     }
 
     BAD_CODE = {
@@ -209,6 +225,8 @@ class HolyChallenger:
         self.screenshot = screenshot
         self.slowdown = slowdown
 
+        print('ONNX_PREFIX={}'.format(onnx_prefix))
+
         # 存储挑战图片的目录
         self.runtime_workspace = ""
         # 挑战截图存储路径
@@ -233,6 +251,8 @@ class HolyChallenger:
         self.pom_handler = resnet.PluggableONNXModels(
             path_objects_yaml=self.path_objects_yaml, dir_model=self.dir_model, lang=self.lang
         )
+        print(self.path_objects_yaml)
+        #print(self.pom_handler.label_alias)
         self.label_alias.update(self.pom_handler.label_alias)
 
     @property
@@ -242,6 +262,7 @@ class HolyChallenger:
     @staticmethod
     def split_prompt_message(prompt_message: str, lang: str) -> str:
         """Detach label from challenge prompt"""
+        print('LANG = {}'.format(lang))
         if lang.startswith("zh"):
             if "中包含" in prompt_message or "上包含" in prompt_message:
                 return re.split(r"击|(的每)", prompt_message)[2]
@@ -256,6 +277,19 @@ class HolyChallenger:
                 return th[2:].strip() if th.startswith("a") else th
             if "select all" in prompt_message:
                 return re.split(r"all (.*) images", prompt_message)[1].strip()
+        elif lang.startswith("pt"):
+            # local language of the computer could be EN ... but site is in PT/BR
+            if "contém" in prompt_message:
+                print('PROMPT1 = {}'.format(re.split(r"que contém", prompt_message)))
+                th = re.split(r"que contém", prompt_message)[-1][1:].strip()
+                return th[2:].strip() if th.startswith("a") else th
+            if "clique em cada imagem" in prompt_message:
+                print('PROMPT2 = {}'.format(re.split(r"clique em cada imagem contendo (.*)", prompt_message)))
+                return re.split(r"clique em cada imagem contendo (.*)", prompt_message)[1].strip()
+            if "por favor, clique em todas as imagens que contenham" in prompt_message:
+                return re.split(r"por favor, clique em todas as imagens que contenham (.*)", prompt_message)[1].strip()
+            if "Por favor, clique em todas as imagens que contêm um" in prompt_message:
+                return re.split(r"Por favor, clique em todas as imagens que contêm um[a]? (.*)", prompt_message)[1].strip()
         return prompt_message
 
     def label_cleaning(self, raw_label: str) -> str:
@@ -333,7 +367,7 @@ class HolyChallenger:
         for _ in range(3):
             try:
                 label_obj = WebDriverWait(
-                    ctx, 5, ignored_exceptions=(ElementNotVisibleException,)
+                    ctx, 60, ignored_exceptions=(ElementNotVisibleException,)
                 ).until(EC.presence_of_element_located((By.XPATH, "//h2[@class='prompt-text']")))
             except TimeoutException:
                 raise ChallengePassed("Man-machine challenge unexpectedly passed")
@@ -360,6 +394,7 @@ class HolyChallenger:
         except (AttributeError, IndexError):
             raise LabelNotFoundException("Get the exception label object")
         else:
+            self.log(message="LABEL = {}".format(_label))
             self.label = self.label_cleaning(_label)
             self.log(message="Get label", label=f"「{self.label}」")
 
@@ -398,7 +433,7 @@ class HolyChallenger:
 
         # Load ONNX model - ResNet | YOLO
         if label_alias not in self.pom_handler.fingers:
-            self.log("lazy-loading", sign="YOLO", match=label_alias)
+            self.log("lazy-loading", sign="YOLO", match=label_alias, prefix=self.onnx_prefix)
             return yolo.YOLO(self.dir_model, self.onnx_prefix)
         return self.pom_handler.lazy_loading(label_alias)
 
@@ -493,6 +528,8 @@ class HolyChallenger:
         start = time.time()
         ImageDownloader(docker_).perform()
         self.log(message="Download challenge images", timeit=f"{round(time.time() - start, 2)}s")
+        print([item[0] for item in docker_])
+        #self.log(message="FILES=".format("\n,".join([item[0] for item in docker_])))
 
     def challenge(self, ctx: Chrome, model):
         """
@@ -529,6 +566,15 @@ class HolyChallenger:
                     # can see the prediction results of the model
                     if self.slowdown:
                         time.sleep(random.uniform(0.2, 0.3))
+
+                    # move cursor to the element ... to emulate human behavior
+                    actions = ActionChains(ctx)
+
+                    print('ELEMENT = {} => {}'.format(alias, self.alias2locator[alias]))
+
+                    actions.move_to_element(self.alias2locator[alias]).perform()
+                    time.sleep(random.uniform(0.2, 0.3))
+
                     self.alias2locator[alias].click()
                 except StaleElementReferenceException:
                     pass
@@ -606,16 +652,40 @@ class HolyChallenger:
         for _ in range(8):
             try:
                 # [👻] 进入复选框
-                WebDriverWait(ctx, 2, ignored_exceptions=(ElementNotVisibleException,)).until(
+                self.log("CHECK IFRAME")
+                # WebDriverWait(ctx, 5, ignored_exceptions=(ElementNotVisibleException,)).until(
+                #     EC.frame_to_be_available_and_switch_to_it(
+                #         (By.XPATH, "//iframe[html/head/title[contains(text(),'hCaptcha')]]") 
+                #         #(By.XPATH, "//iframe[contains(@title,'checkbox')]")   
+                #     )
+                # )
+                WebDriverWait(ctx, 15, ignored_exceptions=(ElementNotVisibleException,)).until(
                     EC.frame_to_be_available_and_switch_to_it(
-                        (By.XPATH, "//iframe[contains(@title,'checkbox')]")
+                        (By.XPATH, "//div[@class='h-captcha']//iframe") 
+                        #(By.XPATH, "//iframe[contains(@title,'checkbox')]")   
                     )
                 )
                 # [👻] 点击复选框
-                WebDriverWait(ctx, 2).until(EC.element_to_be_clickable((By.ID, "checkbox"))).click()
+                self.log("WAITING FOR Handle hCaptcha checkbox")
+
+                xpath = "//div[@id='checkbox']"
+                target_element = ctx.execute_script("return document.evaluate(\"{}\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;".format(xpath))
+
+                print('target_element = {}'.format(target_element))
+                actions = ActionChains(ctx)
+
+                actions.move_to_element(target_element)\
+                    .pause(random.uniform(0.2, 0.5))\
+                    .click()\
+                    .pause(random.uniform(0.2, 0.5))\
+                    .perform()
+                
+
+                # WebDriverWait(ctx, 60).until(EC.element_to_be_clickable((By.ID, "checkbox"))).click()
                 self.log("Handle hCaptcha checkbox")
                 return True
-            except (TimeoutException, InvalidArgumentException):
+            except (TimeoutException, InvalidArgumentException) as ex:
+                print(ex)
                 pass
             finally:
                 # [👻] 回到主线剧情
@@ -712,7 +782,10 @@ class HolyChallenger:
             )
             return
 
-        self.lang = "zh" if re.compile("[\u4e00-\u9fa5]+").search(prompt) else "en"
+        print("LANGUAGE PROMPT = {}".format(prompt))
+        print("REGEX = {}".format(re.compile("clique").search(prompt)))
+                 
+        self.lang = "zh" if re.compile("[\u4e00-\u9fa5]+").search(prompt) else "pt" if re.compile("clique").search(prompt) else "en"
         self.label_alias = self._label_alias[self.lang]
         self.label_alias.update(self.pom_handler.get_label_alias(self.lang))
         self.prompt = prompt
@@ -754,7 +827,7 @@ class ArmorUtils:
     @staticmethod
     def face_the_checkbox(ctx: Chrome) -> typing.Optional[bool]:
         try:
-            WebDriverWait(ctx, 8, ignored_exceptions=(WebDriverException,)).until(
+            WebDriverWait(ctx, 10, ignored_exceptions=(WebDriverException,)).until(
                 EC.presence_of_element_located((By.XPATH, "//iframe[contains(@title,'checkbox')]"))
             )
             return True

@@ -182,6 +182,10 @@ def createChromeOptions(
     options = ChromeOptions()
     options.add_argument("--log-level=3")
     options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--auto-open-devtools-for-tabs")
+
+    #options.add_argument('--blink-settings=imagesEnabled=false')
+
 
     # - Restrict the language of hCaptcha label
     # - Environment variables are valid only in the current process

@@ -6,651 +6,1044 @@ label_alias:
   seaplane:
     zh: [ "水上飞机" ]
     en: [ "seaplane" ]
+    pt: [ "hidroaviao" ]
   bedroom:
     zh: [ "卧室" ]
     en: [ "bedroom" ]
+    pt: [ "quarto" ]
   bridge:
     zh: [ "桥梁" ]
     en: [ "bridge" ]
+    pt: [ "ponte" ]
   domestic_cat:
     zh: [ "家猫", "猫" ]
     en: [ "domestic cat", "cat", "Select all cat pictures." ]
+    pt: [ "gato", "gato domestico" ]
   living_room:
     zh: [ "客厅" ]
     en: [ "living room" ]
+    pt: [ "sala" ]
   conference_room:
     zh: [ "会议室" ]
     en: [ "conference room" ]
+    pt: [ "sala de conferencia" ]
   elephant_made_of_clouds:
     zh: [ "由云制成的大象" ]
     en: [ "elephant made of clouds" ]
+    pt: [ "elefante feito de nuvens" ]
   parrot:
     zh: [ "鹦鹉" ]
     en: [ "parrot" ]
+    pt: [ "papagaio" ]
 
   lion_with_mane_on_its_neck:
     zh: [ "一只脖子上有鬃毛的狮子", "雄狮" ]
     en: [ "lion with mane on its neck", "male lion" ]
+    pt: [ "leao com juba no pescoco", "leao macho" ]
   lion_with_open_eyes:
     zh: [ "睁开眼睛的狮子" ]
     en: [ "lion with open eyes" ]
+    pt: [ "leao com olhos abertos" ]
   lion_with_closed_eyes:
     zh: [ "一只闭着眼睛的狮子" ]
     en: [ "lion with closed eyes" ]
+    pt: [ "leao com olhos fechados" ]
   lion_with_an_open_mouth:
     zh: [ "张开嘴的狮子" ]
     en: [ "lion with an open mouth" ]
+    pt: [ "leao com a boca aberta" ]
   lion_with_a_closed_mouth:
     zh: [ "一只闭着嘴的狮子" ]
     en: [ "lion with a closed mouth" ]
+    pt: [ "leao com a boca fechada" ]
   female_lion:
     zh: [ "雌狮" ]
     en: [ "female lion" ]
+    pt: [ "leoa" ]
 
   horse_made_of_clouds:
     zh: [ "一匹由云制成的马" ]
     en: [ "horse made of clouds" ]
+    pt: [ "cavalo feito de nuvens" ]
   horse_facing_to_the_left:
     zh: [ "朝左马" ]
     en: [ "horse facing to the left" ]
+    pt: [ "cavalo virado para a esquerda" ]
   horse_facing_to_the_right:
     zh: [ "面向右侧的马" ]
     en: [ "horse facing to the right" ]
+    pt: [ "cavalo virado para a direita" ]
   horse_with_white_legs:
     zh: [ "白腿马" ]
     en: [ "horse with white legs" ]
+    pt: [ "cavalo com pernas brancas" ]
   horse_walking_or_running:
     zh: [ "马在行走或奔跑", "马步行或奔跑" ]
     en: [ "horse walking or running" ]
+    pt: [ "cavalo andando ou correndo" ]
 
   smiling_dog:
     zh: [ "微笑狗" ]
     en: [ "smiling dog" ]
+    pt: [ "cachorro sorrindo", "animal" ]
   dog_with_a_collar_on_its_neck:
     zh: [ "一条脖子上有项圈的狗" ]
     en: [ "dog with a collar on its neck" ]
+    pt: [ "cachorro com coleira no pescoco", "animal" ]
   dog_wearing_sunglasses:
     zh: [ "戴墨镜的狗" ]
     en: [ "dog wearing sunglasses" ]
+    pt: [ "cachorro usando oculos de sol", "animal" ]
 
   kitten:
     zh: [ "小猫", "一只小猫" ]
     en: [ "kitten", "baby cat" ]
+    pt: [ "gatinho", "gato bebe", "animal" ]
   adult_cat:
     zh: [ "成年猫" ]
     en: [ "adult cat" ]
+    pt: [ "gato adulto" ]
   cat_with_long_hair:
     zh: [ "长毛猫", "厚毛猫" ]
     en: [ "cat with long hair", "cat with thick fur" ]
+    pt: [ "gato de pelo longo", "gato de pelo grosso" ]
   cat_with_short_hair:
     zh: [ "短毛猫" ]
     en: [ "cat with short hair" ]
+    pt: [ "gato de pelo curto" ]
 
   bird_flying:
     zh: [ "一只飞翔的鸟" ]
     en: [ "bird flying" ]
+    pt: [ "passaro voando" ]
   bird_on_a_branch:
     zh: [ "树枝上的鸟", "一只蜂鸟在树枝上", "树枝上包含蜂鸟" ]
     en: [ "bird on a branch", "hummingbird on a tree branch" ]
+    pt: [ "pássaro em um galho", "beija-flor em um galho de árvore" ]
 
   broken_glass_bottle:
     zh: [ "破碎玻璃瓶" ]
     en: [ "broken glass bottle" ]
+    pt: [ "garrafa de vidro quebrada" ]
+
   whole_glass_bottle:
     zh: [ "整个玻璃瓶" ]
     en: [ "whole glass bottle" ]
+    pt: [ "garrafa de vidro inteira" ]
+
   porcelain_teacup:
     zh: [ "类似瓷器设", "类似瓷器设计图案的茶杯" ]
     en: [ "teacup with similar porcelain design pattern" ]
+    pt: [ "xícara de chá com padrão de design semelhante a porcelana" ]
 
   fish_jumping_over_the_water:
     zh: [ "鱼跃过水面" ]
     en: [ "fish jumping over the water" ]
+    pt: [ "peixe pulando sobre a água" ]
+
   fish_underwater:
     zh: [ "水下鱼" ]
     en: [ "fish underwater" ]
+    pt: [ "peixe subaquático" ]
+
 
   dog_shaped_cookie:
-    zh: [ "狗形饼干" ]
+    zh: [ "biscoito em forma de cachorro" ]
     en: [ "dog-shaped cookie" ]
+    pt: [ "biscoito em forma de cachorro" ]
+
   cat_shaped_cookie:
-    zh: [ "猫形饼干" ]
+    zh: [ "biscoito em forma de gato" ]
     en: [ "cat-shaped cookie" ]
+    pt: [ "biscoito em forma de gato" ]
 
   flower_in_a_vase:
-    zh: [ "花瓶中的花" ]
+    zh: [ "flor em um vaso" ]
     en: [ "flower in a vase" ]
+    pt: [ "flor em um vaso" ]
+
   plant_hanging_from_the_ceiling:
-    zh: [ "悬挂在天花板上的植物" ]
+    zh: [ "planta pendurada no teto" ]
     en: [ "plant hanging from the ceiling" ]
+    pt: [ "planta pendurada no teto", "planta" ]
+
   plant_on_the_table:
-    zh: [ "植物", "桌子上包含植物" ]
+    zh: [ "planta na mesa", "planta sobre a mesa" ]
     en: [ "plant on the table" ]
+    pt: [ "planta na mesa", "planta" ]
+
   dead_and_dried_plant_in_the_pot:
-    zh: [ "花盆中枯死和干燥植物" ]
+    zh: [ "planta morta e seca no vaso" ]
     en: [ "dead and dried plant in the pot" ]
+    pt: [ "planta morta e seca no vaso", "planta" ]
 
   toy_rabbit:
-    zh: [ "玩具兔子" ]
+    zh: [ "coelho de brinquedo" ]
     en: [ "toy rabbit" ]
+    pt: [ "coelho de brinquedo" ]
+
   rabbit_in_the_grass:
-    zh: [ "草丛中包含兔子" ]
+    zh: [ "coelho na grama" ]
     en: [ "rabbit in the grass" ]
+    pt: [ "coelho na grama" ]
+
   rabbit_swimming_in_water:
-    zh: [ "兔子在水中游泳" ]
+    zh: [ "coelho nadando na água" ]
     en: [ "rabbit swimming in water" ]
+    pt: [ "coelho nadando na água" ]
+
   turtle:
-    zh: [ "海龟" ]
+    zh: [ "tartaruga" ]
     en: [ "turtle" ]
+    pt: [ "tartaruga" ]
+
   turtle_under_the_water:
-    zh: [ "水下乌龟" ]
+    zh: [ "tartaruga debaixo d'água" ]
     en: [ "turtle under the water" ]
+    pt: [ "tartaruga debaixo d'água" ]
+
   toy_turtle:
-    zh: [ "玩具乌龟" ]
+    zh: [ "tartaruga de brinquedo" ]
     en: [ "toy turtle" ]
+    pt: [ "tartaruga de brinquedo" ]
+
   turtle_in_the_grass:
-    zh: [ "草丛中包含乌龟" ]
+    zh: [ "tartaruga na grama" ]
     en: [ "turtle in the grass" ]
+    pt: [ "tartaruga na grama" ]
+
   duck:
-    zh: [ "鸭子" ]
+    zh: [ "pato" ]
     en: [ "duck" ]
+    pt: [ "pato" ]
+
   house_covered_in_snow:
-    zh: [ "被雪覆盖的房子" ]
+    zh: [ "casa coberta de neve" ]
     en: [ "house covered in snow" ]
+    pt: [ "casa coberta de neve" ]
+
   toy_house:
-    zh: [ "玩具屋" ]
+    zh: [ "casa de brinquedo" ]
     en: [ "toy house" ]
+    pt: [ "casa de brinquedo" ]
+
   duck_in_the_water:
-    zh: [ "水中鸭子", "水中鸭子的图像" ]
+    zh: [ "pato na água", "imagem de pato na água" ]
     en: [ "duck in the water" ]
+    pt: [ "pato na água" ]
+
   house:
-    zh: [ "房子" ]
+    zh: [ "casa" ]
     en: [ "house" ]
+    pt: [ "casa" ]
+
   cactus:
-    zh: [ "仙人掌" ]
+    zh: [ "cacto" ]
     en: [ "cactus" ]
+    pt: [ "cacto" ]
+
   penguin_surrounded_by_flowers:
-    zh: [ "被鲜花包围的企鹅", "被鲜" ]
+    zh: [ "pinguim rodeado por flores" ]
     en: [ "penguin surrounded by flowers" ]
+    pt: [ "pinguim rodeado por flores" ]
+
   penguin:
-    zh: [ "企鹅" ]
+    zh: [ "pinguim" ]
     en: [ "penguin" ]
+    pt: [ "pinguim" ]
+
   penguin_behind_rocks:
-    zh: [ "岩石后面企鹅" ]
+    zh: [ "pinguim atrás de rochas" ]
     en: [ "penguin behind rocks" ]
+    pt: [ "pinguim atrás de rochas" ]
+
   house_in_the_beach:
-    zh: [ "海滩上的房子", "海滩房屋" ]
+    zh: [ "casa na praia" ]
     en: [ "house in the beach" ]
+    pt: [ "casa na praia" ]
+
   penguin_on_ice:
-    zh: [ "冰上企鹅" ]
+    zh: [ "pinguim no gelo" ]
     en: [ "penguin on ice" ]
+    pt: [ "pinguim no gelo" ]
+
   cactus_in_the_sand:
-    zh: [ "沙滩上的仙人掌", "沙中仙人掌" ]
+    zh: [ "cacto na areia" ]
     en: [ "cactus in the sand" ]
+    pt: [ "cacto na areia" ]
+
   cactus_in_a_pot:
-    zh: [ "盆中仙人掌" ]
+    zh: [ "cacto em um vaso" ]
     en: [ "cactus in a pot" ]
+    pt: [ "cacto em um vaso" ]
+
   bee_flying_near_a_flower:
-    zh: [ "蜜蜂在花朵附近飞翔" ]
+    zh: [ "abelha voando perto de uma flor" ]
     en: [ "bee flying near a flower" ]
+    pt: [ "abelha voando perto de uma flor" ]
+
   hat:
-    zh: [ "人们通常戴在头上的物品", "人们通常戴在头上" ]
+    zh: [ "chapéu" ]
     en: [ "item that a person normally wears on their head" ]
+    pt: [ "chapéu" ]
   shoes:
-    zh: [ "人们通常脚上穿着的物品" ]
+    zh: [ "item that a person normally wears on their feet" ]
     en: [ "item that a person normally wears on their feet" ]
+    pt: [ "calçado" ]
+
   belt:
-    zh: [ "人们通常穿在裤子上的物品" ]
+    zh: [ "item that a person normally wears on their pants" ]
     en: [ "item that a person normally wears on their pants" ]
+    pt: [ "cinto" ]
+
   dangerous_sea:
-    zh: [ "危险海域", "危险海洋", "波涛汹涌的大海" ]
+    zh: [ "dangerous sea", "rough sea" ]
     en: [ "dangerous sea", "rough sea" ]
+    pt: [ "mar perigoso", "mar agitado" ]
+
   calm_sea:
-    zh: [ "平静海域", "平静海洋", "平静海面" ]
+    zh: [ "calm sea" ]
     en: [ "calm sea" ]
+    pt: [ "mar calmo" ]
+
   hot_food:
-    zh: [ "热食" ] # await
+    zh: [ "hot food" ]
     en: [ "hot food" ]
+    pt: [ "comida quente" ]
+
   cold_drink:
-    zh: [ "冷饮", "冰杯" ]
+    zh: [ "cold drink", "glass with ice" ]
     en: [ "cold drink", "glass with ice" ]
+    pt: [ "bebida gelada", "copo com gelo" ]
+
   jellyfish:
-    zh: [ "水母" ]
+    zh: [ "jellyfish" ]
     en: [ "jellyfish" ]
+    pt: [ "águas-vivas" ]
+
   shark:
-    zh: [ "鲨鱼" ]
+    zh: [ "shark" ]
     en: [ "shark" ]
+    pt: [ "tubarão" ]
+
   octopus:
-    zh: [ "章鱼" ]
+    zh: [ "octopus" ]
     en: [ "octopus" ]
+    pt: [ "polvo" ]
+
   cup_of_coffee:
-    zh: [ "一杯咖啡" ]
+    zh: [ "cup of coffee" ]
     en: [ "cup of coffee" ]
+    pt: [ "xícara de café" ]
+
   starfish:
-    zh: [ "海星" ]
+    zh: [ "starfish" ]
     en: [ "starfish" ]
+    pt: [ "estrela-do-mar" ]
+
   duck_behind_rocks:
-    zh: [ "鸭子在岩石后面", "岩石后面鸭子" ]
+    zh: [ "duck behind rocks" ]
     en: [ "duck behind rocks" ]
+    pt: [ "pato atrás das rochas" ]
+
   strawberry_cake:
-    zh: [ "草莓蛋糕" ]
+    zh: [ "strawberry cake" ]
     en: [ "strawberry cake" ]
+    pt: [ "bolo de morango" ]
+
   cupcake:
-    zh: [ "纸杯蛋糕" ]
+    zh: [ "cupcake", "curcake", "cupsake", "subcake" ]
     en: [ "cupcake", "curcake", "cupsake", "subcake" ]
+    pt: [ "cupcake" ]
+
   bowl_of_pasta:
-    zh: [ "一碗意大利面" ]
+    zh: [ "bowl of pasta" ]
     en: [ "bowl of pasta" ]
+    pt: [ "prato de massa" ]
+
   carved_pumpkin_with_a_face:
-    zh: [ "带有面部的雕刻南瓜" ]
+    zh: [ "carved pumpkin with a face" ]
     en: [ "carved pumpkin with a face" ]
+    pt: [ "abóbora esculpida com rosto" ]
+
   skeleton_ridding_a_bicycle:
-    zh: [ "骑自行车的骷髅" ]
+    zh: [ "skeleton ridding a bicycle", "skeleton riding a bicycle" ]
     en: [ "skeleton ridding a bicycle", "skeleton riding a bicycle" ]
+    pt: [ "esqueleto andando de bicicleta" ]
+
   orange_fruit:
-    zh: [ "橙色水果" ]
+    zh: [ "orange fruit" ]
     en: [ "orange fruit" ]
+    pt: [ "fruta laranja", "fruta" ]
+
   drawing_of_a_haunted_house:
-    zh: [ "鬼屋的图画", "鬼屋图画" ]
+    zh: [ "drawing of a haunted house" ]
     en: [ "drawing of a haunted house" ]
+    pt: [ "desenho de uma casa assombrada" ]
+
   ghost_riding_a_bicycle:
-    zh: [ "骑自行车的鬼魂", "鬼骑自行车" ] #await
+    zh: [ "ghost riding a bicycle" ]
     en: [ "ghost riding a bicycle" ]
+    pt: [ "fantasma andando de bicicleta" ]
   flying_bat:
-    zh: [ "飞行蝙蝠", "一只飞翔的蝙蝠" ] # await
+    zh: [ "flying bat" ]
     en: [ "flying bat" ]
-  rabbit_blur: # rabbit
-    zh: [ "兔子" ]
+    pt: [ "morcego voando" ]
+
+  rabbit_blur:
+    zh: [ "rabbit" ]
     en: [ "rabbit" ]
+    pt: [ "coelho" ]
+
   black_cat_in_a_forest:
-    zh: [ "森林中的黑猫" ]
+    zh: [ "black cat in a forest" ]
     en: [ "black cat in a forest" ]
+    pt: [ "gato preto em uma floresta" ]
+
   chocolate_cake:
-    zh: [ "巧克力蛋糕" ]
+    zh: [ "chocolate cake" ]
     en: [ "chocolate cake" ]
+    pt: [ "bolo de chocolate" ]
+
   oranges_in_a_basket:
-    zh: [ "篮子中的橙子", "篮子中橙子" ]
+    zh: [ "oranges in a basket", "lease click each image containing oranges in a basket" ]
     en: [ "oranges in a basket","lease click each image containing oranges in a basket" ]
+    pt: [ "laranjas em uma cesta", "por favor, clique em cada imagem contendo laranjas em uma cesta" ]
+
   horse_mask:
-    zh: [ "一匹马" ]
+    zh: [ "horse" ]
     en: [ "horse" ]
-  lion_mask: # lion
-    zh: [ "狮子" ]
+    pt: [ "cavalo" ]
+
+  lion_mask:
+    zh: [ "lion" ]
     en: [ "lion" ]
+    pt: [ "leão" ]
+
   lemons_in_a_basket:
-    zh: [ "篮子中柠檬", "篮子中的柠檬" ]
+    zh: [ "lemons in a basket", "lease click each image containing lemons in a basket" ]
     en: [ "lemons in a basket", "lease click each image containing lemons in a basket" ]
+    pt: [ "limões em uma cesta", "por favor, clique em cada imagem contendo limões em uma cesta" ]
+
   lemon:
-    zh: [ "柠檬" ]
+    zh: [ "lemon" ]
     en: [ "lemon" ]
+    pt: [ "limão" ]
   pancake:
     zh: [ "煎饼" ]
     en: [ "pancake" ]
+    pt: [ "panqueca" ]
+
   icecream:
     zh: [ "冰淇淋" ]
     en: [ "ice cream" ]
+    pt: [ "sorvete" ]
+
   cake:
     zh: [ "蛋糕" ]
     en: [ "cake" ]
+    pt: [ "bolo" ]
 
   hot_air_balloon:
     zh: [ "热气球" ]
     en: [ "hot air balloon" ]
+    pt: [ "balão de ar quente" ]
+
   helicopter:
     zh: [ "直升机" ]
     en: [ "helicopter" ]
+    pt: [ "helicóptero" ]
 
   ant:
     zh: [ "蚂蚁" ]
     en: [ "ant" ]
+    pt: [ "formiga" ]
+
   dragonfly:
     zh: [ "蜻蜓" ]
     en: [ "dragonfly" ]
+    pt: [ "libélula" ]
+
   ladybug:
     zh: [ "七星瓢虫", "瓢虫" ]
     en: [ "ladybug" ]
+    pt: [ "joaninha" ]
+
   chicken_on_the_beach:
-    zh: [ "每张海滩上包含一只鸡的图片", "沙滩上的鸡" ]
+    zh: [ "chicken on the beach" ]
     en: [ "chicken on the beach" ]
+    pt: [ "galinha na praia" ]
+
   chicken_on_a_tree:
-    zh: [ "树上的鸡" ]
+    zh: [ "chicken on a tree" ]
     en: [ "chicken on a tree" ]
-  #  hedgehog_on_sand:
-  #    zh: [ "沙子上的刺猬" ]
-  #    en: [ "hedgehog on sand" ]
+    pt: [ "galinha em uma árvore" ]
+
   hedgehog_in_a_bowl:
-    zh: [ "碗中刺猬" ] # await
+    zh: [ "hedgehog in a bowl" ]
     en: [ "hedgehog in a bowl" ]
+    pt: [ "ouriço em uma tigela" ]
+
   squirrel_on_a_tree:
-    zh: [ "树上松鼠" ]
+    zh: [ "squirrel on a tree" ]
     en: [ "squirrel on a tree" ]
+    pt: [ "esquilo em uma árvore" ]
+
   crab:
     zh: [ "螃蟹" ]
     en: [ "crab" ]
+    pt: [ "caranguejo" ]
   toy_penguin:
     zh: [ "玩具企鹅" ]
     en: [ "toy penguin" ]
+    pt: [ "pinguim de brinquedo" ]
+
   squirrel:
     zh: [ "松鼠" ]
     en: [ "squirrel" ]
+    pt: [ "esquilo" ]
+
   hedgehog_surrounded_by_flowers:
     zh: [ "被鲜花包围的刺猬" ]
     en: [ "hedgehog surrounded by flowers" ]
+    pt: [ "ouriço rodeado de flores" ]
+
   butterfly:
     zh: [ "蝴蝶" ]
     en: [ "butterfly" ]
+    pt: [ "borboleta" ]
+
   apple_on_a_tree:
     zh: [ "树上苹果" ]
     en: [ "apple on a tree" ]
+    pt: [ "maçã em uma árvore" ]
+
   strawberry_in_a_basket:
     zh: [ "篮子里的草莓" ]
     en: [ "strawberry in a basket" ]
+    pt: [ "morango em uma cesta" ]
+
   daisy:
     zh: [ "雏菊" ]
     en: [ "daisy" ]
+    pt: [ "margarida" ]
+
   hedgehog_in_water:
     zh: [ "水中刺猬" ]
     en: [ "hedgehog in water" ]
+    pt: [ "ouriço na água" ]
+
   pineapple:
     zh: [ "菠萝" ]
     en: [ "pineapple" ]
+    pt: [ "abacaxi" ]
+
   panda:
     zh: [ "熊猫" ]
     en: [ "panda" ]
+    pt: [ "panda" ]
+
   dolphin:
     zh: [ "海豚" ]
     en: [ "dolphin" ]
+    pt: [ " golfinho" ]
+
   tulip:
     zh: [ "郁金香" ]
     en: [ "tulip" ]
+    pt: [ "tulipa" ]
+
   hedgehog_on_rocks:
     zh: [ "刺猬在岩石上" ]
     en: [ "hedgehog on rocks" ]
+    pt: [ "ouriço nas rochas" ]
+
   sea_otter:
     zh: [ "海獭" ]
     en: [ "sea otter" ]
+    pt: [ "lontra marinha" ]
+
   rose:
     zh: [ "玫瑰" ]
     en: [ "rose" ]
+    pt: [ "rosa" ]
+
   sunflower:
     zh: [ "向日葵" ]
     en: [ "sunflower" ]
+    pt: [ "girassol", "flor" ]
+
   panda_in_a_living_room:
     zh: [ "客厅里有熊猫" ]
     en: [ "panda in a living room" ]
+    pt: [ "panda em uma sala de estar" ]
+
   residential_house:
     zh: [ "住宅" ]
     en: [ "residential house" ]
+    pt: [ "casa residencial" ]
+
   tall_building:
     zh: [ "高层建筑" ]
     en: [ "tall building" ]
+    pt: [ "prédio alto" ]
+
   piano:
     zh: [ "钢琴" ]
     en: [ "piano" ]
+    pt: [ "piano" ]
+
   cymbal:
     zh: [ "铙钹" ]
     en: [ "cymbal" ]
+    pt: [ "prato" ]
+
   red_roses_in_a_garden:
     zh: [ "花园中红玫瑰", "花园中的红玫瑰" ]
     en: [ "lease click each image containing red roses in a garden", "red roses in a garden" ]
+    pt: [ "rosas vermelhas em um jardim" ]
+
   panda_in_a_forest:
     zh: [ "森林中熊猫", "森林中的熊猫" ]
     en: [ "panda in a forest" ]
+    pt: [ "panda em uma floresta" ]
+
   desert:
     zh: [ "沙漠" ]
     en: [ "desert" ]
+    pt: [ "deserto" ]
+
   sunflowers_in_a_field:
     zh: [ "田野中向日葵" ]
     en: [ "sunflowers in a field" ]
+    pt: [ "girassóis em um campo" ]
+
   mountain:
     zh: [ "山" ]
     en: [ "mountain" ]
+    pt: [ "montanha" ]
+
   forest:
     zh: [ "森林" ]
     en: [ "forest" ]
+    pt: [ "floresta" ]
+
   daisy_in_a_pot:
     zh: [ "盆中雏菊" ]
     en: [ "daisy in a pot" ]
+    pt: [ "margarida em um vaso" ]
+
   panda_in_a_garden:
     zh: [ "花园中熊猫" ]
     en: [ "panda in a garden" ]
+    pt: [ "panda em um jardim" ]
+
   violin:
     zh: [ "小提琴" ]
     en: [ "violin" ]
+    pt: [ "violino" ]
+
   beach:
     zh: [ "海滩" ]
     en: [ "beach" ]
+    pt: [ "praia" ]
+
   trumpet:
     zh: [ "喇叭" ]
     en: [ "trumpet" ]
+    pt: [ "trompete" ]
+
   pineapple_on_pizza:
     zh: [ "披萨上菠萝" ]
     en: [ "pineapple on pizza" ]
+    pt: [ "abacaxi na pizza" ]
+
   fried_egg_on_a_bread:
     zh: [ "面包上煎蛋" ]
     en: [ "fried egg on a bread" ]
+    pt: [ "ovo frito em um pão" ]
+
   tulips_in_a_vase:
     zh: [ "花瓶里的郁金香" ]
     en: [ "tulips in a vase" ]
+    pt: [ "tulipas em um vaso" ]
+
   guitar:
     zh: [ "吉他" ]
     en: [ "guitar" ]
+    pt: [ "violão" ]
+
   panda_in_water:
     zh: [ "水中的熊猫" ]
     en: [ "panda in water" ]
+    pt: [ "panda na água" ]
+
   ocean:
     zh: [ "海洋" ]
     en: [ "ocean" ]
+    pt: [ "oceano" ]
+
   hand_watches:
     zh: [ "手表" ]
     en: [ "hand watches" ]
+    pt: [ "relógios de pulso" ]
+
   bear_in_the_water:
     zh: [ "熊在水里" ]
     en: [ "bear in the water" ]
+    pt: [ "urso na água" ]
+
   hockey_match:
     zh: [ "曲棍球比赛" ]
     en: [ "hockey match" ]
+    pt: [ "jogo de hóquei" ]
+
   soccer_ball:
     zh: [ "足球" ]
     en: [ "soccer ball" ]
+    pt: [ "bola de futebol" ]
+
   hamster:
     zh: [ "仓鼠" ]
     en: [ "hamster" ]
+    pt: [ "hamster" ]
+
   tractor:
     zh: [ "拖拉机" ]
     en: [ "tractor" ]
+    pt: [ "trator" ]
+
+
   panda_wearing_glasses:
     zh: [ "戴眼镜的熊猫" ]
     en: [ "panda wearing glasses" ]
+    pt: [ "panda usando óculos" ]
+
   cow_in_its_natural_environment:
     zh: [ "母牛在其自然环境中", "自然环境中的奶牛" ]
     en: [ "cow in its natural environment" ]
+    pt: [ "vaca em seu ambiente natural" ]
+
   someone_playing_football:
     zh: [ "有人踢足球" ]
     en: [ "someone playing football" ]
+    pt: [ "alguém jogando futebol" ]
+
   someone_playing_soccer:
     zh: [ "有人踢足球" ]
     en: [ "someone playing soccer" ]
+    pt: [ "alguém jogando futebol" ]
+
   robot:
     zh: [ "机器人" ]
     en: [ "robot" ]
+    pt: [ "robô" ]
+
   hallway:
     zh: [ "门厅" ]
     en: [ "hallway" ]
+    pt: [ "corredor" ]
+
   car_tire:
     zh: [ "汽车轮胎" ]
     en: [ "car tire" ]
+    pt: [ "pneu de carro" ]
+
   very_fast_car:
     zh: [ "非常快的车" ]
     en: [ "very fast car" ]
+    pt: [ "carro muito rápido" ]
+
   dog_t_shirt:
     zh: [ "狗T恤" ]
     en: [ "dog t-shirt" ]
+    pt: [ "camiseta de cachorro" ]
+
   cat_t_shirt:
     zh: [ "猫T恤" ]
     en: [ "cat t-shirt" ]
+    pt: [ "camiseta de gato" ]
+
   bunny:
     zh: [ "兔子" ]
     en: [ "bunny" ]
+    pt: [ "coelho" ]
+
   bowling_ball:
     zh: [ "保龄球" ]
     en: [ "bowling ball" ]
+    pt: [ "bola de boliche" ]
+
   basketball:
     zh: [ "篮球" ]
     en: [ "basketball" ]
+    pt: [ "basquete" ]
+
   tennis_ball:
     zh: [ "网球" ]
     en: [ "tennis ball" ]
+    pt: [ "bola de tênis" ]
+
   rugby_ball:
     zh: [ "橄榄球" ]
     en: [ "rugby ball" ]
+    pt: [ "bola de rugby" ]
+
   alarm_clock:
     zh: [ "闹钟" ]
     en: [ "alarm clock" ]
+    pt: [ "relógio despertador" ]
+
   bird_sitting_in_a_tree:
     zh: [ "坐在树上的鸟" ]
     en: [ "bird sitting in a tree" ]
+    pt: [ "pássaro sentado em uma árvore" ]
+
   egg_on_a_plate:
     zh: [ "盘子里的鸡蛋", "盘子上的鸡蛋" ]
     en: [ "egg on a plate" ]
+    pt: [ "ovo em um prato" ]
+
   someone_playing_golf:
     zh: [ "有人打高尔夫球", "打高尔夫球" ]
     en: [ "someone playing golf" ]
+    pt: [ "alguém jogando golfe" ]
+
   someone_playing_hockey:
     zh: [ "有人打曲棍球", "打曲棍球" ]
     en: [ "someone playing hockey" ]
+    pt: [ "alguém jogando hóquei" ]
+
   steering_wheel:
     zh: [ "方向盘" ]
     en: [ "steering wheel" ]
+    pt: [ "volante" ]
+
   sunny_sky:
     zh: [ "晴空" ]
     en: [ "sunny sky" ]
+    pt: [ "céu ensolarado" ]
+
   planet:
     zh: [ "行星" ]
     en: [ "planet" ]
+    pt: [ "planeta" ]
+
   baseball_match:
     zh: [ "棒球比赛" ]
     en: [ "baseball match" ]
+    pt: [ "partida de beisebol" ]
+
   cat_wearing_a_pirate_hat:
     zh: [ "戴着海盗帽的猫" ]
     en: [ "cat wearing a pirate hat" ]
+    pt: [ "gato usando um chapéu de pirata" ]
+
   hot_dog:
     zh: [ "热狗" ]
     en: [ "hot dog" ]
+    pt: [ "cachorro-quente" ]
+
+
   onions:
     zh: [ "洋葱" ]
     en: [ "onions" ]
+    pt: [ "cebolas" ]
+
   burger:
     zh: [ "汉堡包" ]
     en: [ "burger" ]
+    pt: [ "hambúrguer" ]
+
   croissant:
     zh: [ "羊角面包" ]
     en: [ "croissant" ]
+    pt: [ "croissant" ]
+
   camera:
     zh: [ "相机" ]
     en: [ "camera" ]
+    pt: [ "câmera" ]
+
   kettle:
     zh: [ "壶" ]
     en: [ "kettle" ]
+    pt: [ "chaleira" ]
+
   potatoes:
     zh: [ "土豆" ]
     en: [ "potatoes" ]
+    pt: [ "batatas" ]
+
   donut:
     zh: [ "油炸圈饼" ]
     en: [ "donut" ]
+    pt: [ "rosquinha" ]
+
   cabbage:
     zh: [ "卷心菜" ]
     en: [ "cabbage" ]
+    pt: [ "repolho" ]
+
   headphones:
     zh: [ "耳机" ]
     en: [ "headphones" ]
+    pt: [ "fones de ouvido" ]
+
   telescope:
     zh: [ "望远镜" ]
     en: [ "telescope " ]
+    pt: [ "telescópio" ]
+
   freeway:
     zh: [ "高速公路" ]
     en: [ "freeway" ]
+    pt: [ "autoestrada" ]
+
   electricity_pylon:
     zh: [ "电塔" ]
     en: [ "electricity pylon" ]
+    pt: [ "torre de eletricidade" ]
+
   roast_chicken:
     zh: [ "烤鸡" ]
     en: [ "roast chicken" ]
+    pt: [ "frango assado" ]
+
   ladder:
     zh: [ "梯子" ]
     en: [ "ladder" ]
+    pt: [ "escada" ]
+
   factory_with_chimney:
     zh: [ "有烟囱的工厂" ]
     en: [ "factory with chimney" ]
+    pt: [ "fábrica com chaminé" ]
+
   microwave:
     zh: [ "微波炉", "微波" ]
     en: [ "microwave" ]
+    pt: [ "micro-ondas" ]
+
   vinyl:
     zh: [ "乙烯基塑料", "黑胶唱片", "乙烯基" ]
     en: [ "vinyl" ]
+    pt: [ "vinil" ]
+
   lighthouse:
     zh: [ "灯塔", "瞭望塔" ]
     en: [ "lighthouse" ]
+    pt: [ "farol" ]
+
   popcorn:
     zh: [ "爆米花" ]
     en: [ "popcorn" ]
+    pt: [ "pipoca" ]
+
   refrigerator:
     zh: [ "冰箱" ]
     en: [ "refrigerator" ]
+    pt: [ "geladeira" ]
+
   electric_scooter:
     zh: [ "电动滑板车" ]
-    en: [ "electric_scooter" ]
+    en: [ "electric scooter" ]
+    pt: [ "patinete elétrico" ]
+
   hummingbird:
     zh: [ "蜂鸟" ]
     en: [ "hummingbird" ]
+    pt: [ "beija-flor" ]
+
   treadmill:
     zh: [ "跑步机" ]
     en: [ "treadmill" ]
+    pt: [ "esteira" ]
+
   smartphone:
     zh: [ "智能手机" ]
     en: [ "smartphone" ]
+    pt: [ "smartphone" ]
+
   lamp:
     zh: [ "灯" ]
     en: [ "lamp" ]
+    pt: [ "lâmpada" ]
+
   console_controller:
     zh: [ "控制台控制器" ]
     en: [ "console controller" ]
+    pt: [ "controle de console" ]
+
   drone:
     zh: [ "无人机" ]
     en: [ "drone" ]
+    pt: [ "drone" ]
+
   drum:
     zh: [ "鼓" ]
     en: [ "drum" ]
+    pt: [ "bateria" ]
+
   computer_keyboard:
     zh: [ "计算机键盘" ]
     en: [ "computer keyboard" ]
+    pt: [ "teclado de computador" ]
+
   dart_board:
     zh: [ "飞镖盘" ]
     en: [ "dart board" ]
+    pt: [ "alvo de dardos" ]
+
   bicycle:
     zh: [ "自行车" ]
     en: [ "bicycle" ]
+    pt: [ "bicicleta" ]
+
   knife:
     zh: [ "刀" ]
     en: [ "knife" ]
+    pt: [ "facalhão" ]
+
   typewriter:
     zh: [ "打字机" ]
     en: [ "typewriter" ]
+    pt: [ "máquina de escrever" ]
+
   monitor:
     zh: [ "监视器" ]
     en: [ "monitor" ]
+    pt: [ "monitor" ]
+
   microscope:
     zh: [ "显微镜" ]
     en: [ "microscope" ]
+    pt: [ "microscópio" ]
+
   trash_bin:
     zh: [ "垃圾桶" ]
     en: [ "trash bin" ]
+    pt: [ "lixeira" ]
+
   hourglass:
     zh: [ "滴漏" ]
     en: [ "hourglass" ]
+    pt: [ "ampulheta" ]
+
   dumbbell:
     zh: [ "哑铃" ]
     en: [ "dumbbell" ]
+    pt: [ "haltere" ]
+
   surfboard:
     zh: [ "冲浪板" ]
     en: [ "surfboard" ]
+    pt: [ "prancha de surfe", "prancha" ]
+
+#  animal:
+#    en: ["animal"]
+#    pt: ["animal"]
+#
+#  food:
+#    en: ["food", "cake"]
+#    pt: ["comida", "bolo"]

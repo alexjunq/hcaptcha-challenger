@@ -76,7 +76,7 @@ class PluggableONNXModels:
         self.dir_model = dir_model
         self.lang = lang
         self._fingers = []
-        self._label_alias = {i: {} for i in ["zh", "en"]}
+        self._label_alias = {i: {} for i in ["zh", "en", "pt"]}
         self._register(path_objects_yaml)
 
     @property

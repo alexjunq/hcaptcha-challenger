@@ -17,6 +17,7 @@ class Prefix:
     YOLOv6n = "yolov6n"
     YOLOv6s = "yolov6s"
     YOLOv6t = "yolov6t"
+    YOLOv6l = "yolov6l"
 
 
 class YOLO:
@@ -106,9 +107,10 @@ class YOLO:
     ]
 
     def __init__(self, dir_model: str, onnx_prefix: str = None):
+        print('YOLO INITIAL PREFIX = {}'.format(onnx_prefix))
         onnx_prefix = (
             "yolov5s6"
-            if onnx_prefix
+            if onnx_prefix.lower()
             not in [
                 # Reference - Ultralytics YOLOv5 https://github.com/ultralytics/yolov5
                 "yolov5m6",
@@ -118,14 +120,19 @@ class YOLO:
                 "yolov6n",
                 "yolov6s",
                 "yolov6t",
+                "yolov6l",
                 # "yolov7"  # Vision Transformer
             ]
             else onnx_prefix
         )
 
+        print('YOLO FINAL PREFIX = {}'.format(onnx_prefix))
+
         name = f"YOLOv5{onnx_prefix[-2:]}"
-        if onnx_prefix.startswith("yolov6"):
+        if onnx_prefix.lower().startswith("yolov6"):
             name = f"MT-YOLOv6{onnx_prefix[-1]}"
+
+        print('YOLO USED = {}'.format(name))    
 
         self.modelhub = ModelHub(onnx_prefix, f"{name}(ONNX)_model", dir_model)
         self.modelhub.register_model()
@@ -184,6 +191,9 @@ class YOLO:
 
         indices = cv2.dnn.NMSBoxes(boxes, confidences, confidence, nms_thresh)
 
+#        print(indices)
+    
+
         return [str(self.classes[class_ids[i]]) for i in indices]
 
     def solution(self, img_stream: bytes, label: str, **kwargs) -> bool:
@@ -211,6 +221,7 @@ class YOLO:
         )
         try:
             labels = self.detect_common_objects(img, confidence, nms_thresh)
+            print(labels)
             return bool(label in labels)
         # patch for `ValueError: attempt to get argmax of an empty sequence.`
         # at code `class_id=np.argmax(scores)`

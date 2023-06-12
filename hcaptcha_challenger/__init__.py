@@ -16,7 +16,7 @@ from ._solutions.yolo import Prefix, YOLO
 from .core import HolyChallenger
 
 __all__ = ["HolyChallenger", "new_challenger", "get_challenge_ctx"]
-__version__ = "0.4.3.3"
+__version__ = "0.4.3.5"
 
 logger = init_log(
     error=os.path.join("datas", "logs", "error.log"),
@@ -30,6 +30,8 @@ def install(
     dir_assets = os.path.join("datas", "models", "_assets")
     dir_models = os.path.join("datas", "models")
     path_objects_yaml = os.path.join("datas", "objects.yaml")
+
+    print('INSTALLLLLLL = {}'.format(onnx_prefix))
 
     os.makedirs(dir_assets, exist_ok=True)
 
@@ -52,7 +54,7 @@ def install(
 
 def new_challenger(
     dir_workspace: str = "_challenge",
-    onnx_prefix: typing.Optional[str] = Prefix.YOLOv6n,
+    onnx_prefix: typing.Optional[str] = Prefix.YOLOv6t,
     lang: typing.Optional[str] = "en",
     screenshot: typing.Optional[bool] = False,
     debug: typing.Optional[bool] = False,
@@ -71,8 +73,10 @@ def new_challenger(
     if not isinstance(dir_workspace, str) or not os.path.isdir(dir_workspace):
         dir_workspace = os.path.join("datas", "temp_cache", "_challenge")
         os.makedirs(dir_workspace, exist_ok=True)
+    print('__________ONNX_PREFIX = {}'.format(onnx_prefix))
     if not hasattr(Prefix, onnx_prefix):
-        onnx_prefix = Prefix.YOLOv6n
+        print('{} does not exists in Prefix'.format(onnx_prefix))
+        onnx_prefix = Prefix.YOLOv6t
 
     return HolyChallenger(
         dir_workspace=dir_workspace,

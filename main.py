@@ -110,6 +110,27 @@ class Scaffold:
         demo_selenium.bytedance()
 
     @staticmethod
+    def demo_nfe():
+        """
+        signup hcaptcha dashboard
+
+        Usage: python main.py demo-bytedance
+        :return:
+        """
+        demo_selenium.nfe()
+
+    @staticmethod
+    def demo_sample():
+        """
+        signup hcaptcha dashboard
+
+        Usage: python main.py demo-bytedance
+        :return:
+        """
+        demo_selenium.sample()
+
+
+    @staticmethod
     def demo_classify():
         """
         BinaryClassification Task
