@@ -423,7 +423,7 @@ class HolyChallenger:
                 f"prompt=「{self.prompt}」 "
                 f"screenshot={self.path_screenshot} "
                 f"site_link={ctx.current_url} "
-                f"issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q={q}"
+                f"issues=https://github.com/alexjunq/hcaptcha-challenger/issues?q={q}"
             )
             return self.CHALLENGE_BACKCALL
 

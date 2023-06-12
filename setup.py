@@ -9,18 +9,18 @@ this_directory = os.path.abspath(os.path.dirname(__file__))
 # pip install urllib3 -U
 # python setup.py sdist bdist_wheel && python -m twine upload dist/*
 setup(
-    name="hcaptcha-challenger",
+    name="hcaptcha-challenger-2",
     version=hcaptcha_challenger.__version__,
     keywords=["hcaptcha", "hcaptcha-challenger", "hcaptcha-challenger-python", "hcaptcha-solver"],
-    author="QIN2DIM",
-    author_email="qinse.top@foxmail.com",
-    maintainer="QIN2DIM, Bingjie Yan",
-    maintainer_email="qinse.top@foxmail.com, bj.yan.pa@qq.com",
-    description="🥂 Gracefully face hCaptcha challenge with YOLOv6(ONNX) embedded solution.",
+    author="alexjunq",
+    author_email="alexandre.junqueira@inmetrics.com.br",
+    maintainer="Alexandre Junqueira",
+    maintainer_email="alexandre.junqueira@inmetrics.com.br",
+    description="🥂 Gracefully face hCaptcha challenge with YOLOv6(ONNX) embedded solution. - based on QIN2DIM solution",
     long_description=open(os.path.join(this_directory, "README.md"), encoding="utf8").read(),
     long_description_content_type="text/markdown",
     license="GNU General Public License v3.0",
-    url="https://github.com/QIN2DIM/hcaptcha-challenger",
+    url="https://github.com/alexjunq/hcaptcha-challenger",
     packages=find_packages(include=["hcaptcha_challenger", "hcaptcha_challenger.*", "LICENSE"]),
     install_requires=[
         "loguru~=0.6.0",
