@@ -9,6 +9,7 @@ import sys
 import random
 import json 
 import re 
+import os
 sys.path.append('../')
 
 from selenium.common.exceptions import (
@@ -121,9 +122,9 @@ def getTableFormat1(rows):
         colcnt = 0
         for col in cols:
             if rowcnt == 0:
-                index.append(col.find_elements(By.XPATH, './/label').get_attribute("innerHTML").strip())
+                index.append(col.find_element(By.XPATH, './/label').get_attribute("innerHTML").strip())
             else:
-                data[index[colcnt]] = col.find_elements(By.XPATH, './/span').get_attribute("innerHTML").strip()
+                data[index[colcnt]] = col.find_element(By.XPATH, './/span').get_attribute("innerHTML").strip()
             colcnt = colcnt + 1
         rowcnt = rowcnt + 1
     return data
@@ -231,13 +232,17 @@ def saveNFE(ctx, content, nfeKey, _format='html'):
                         print(json.dumps(x))
                         data[label] = x
 
+        data['chave'] = nfeKey
         data = json.dumps(data, indent=4)
     else:
         data = ctx.execute_script("return arguments[0].innerHTML;",content)
         data = '<div id="NFe">{}</div>'.format(data)
 
 
-    with open('datas/nfe-{}.{}'.format(nfeKey, _format), 'w') as f:
+    if not os.path.exists('datas/docs'):
+        os.makedirs('datas/docs')
+
+    with open('datas/docs/nfe-{}.{}'.format(nfeKey, _format), 'w') as f:
         f.write(data)
         f.flush()
         f.close()
